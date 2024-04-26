@@ -8,6 +8,10 @@
 6. Scalability - To Do
 7. Package/ Bundle Size
 
+Github Links
+1. Login-conv: https://github.com/manishrawat911/login-conv/tree/main
+1. Calendar-sync: https://github.com/manishrawat911/calendar-sync/tree/main
+
 # Introduction
 
 This report attempts to compare two different approaches to develop multi-client real-time synchronized web applications. To distinguishes between two approaches the report also cover technicality of the approaches in enough depth. The focus is to report the developer experience while building two identical application with two approaches. Report also covers the functionality of the applications, implementation and the challenges associated with each approach, this includes User Interface comparison, line of code, underlying libraries and frameworks that were used to create application. Lastly, report compares the size of the applications.
@@ -38,14 +42,17 @@ Chatroom allows a mentor to setup a chatroom and credentials required to join ch
 ### Second Application: Sync-Calendar
 Sync-calendar app allows users to add and modify events on a calendar. The events will we visible to all the users and their attributes such as start time and end time further can be modified. 
 
-# Line of Code
+# Lines of Code
 
 One of the criteria for comparing the DevX of two approaches is how many lines of code is required to build a application is with similar set of functionalities. 
 
-Figures and Numbers
-        TEASync     Modern Frameworks
-App 1   
-App 2   264         190(UI side) + 150 (Server side) 
+
+
+| Application           | Lines of Code |
+| -----------           | ----------- |
+| App 1: Chatroom       | 450       |
+| App 2: Calendar-sync  | 340        |
+
 
 Unlike TEASync, the application logic is split in two major layers i.e. back end and front end. Applications in TEASync are written using Elm whereas Javascript and Typescript are used for modern frameworks. Additionally, modern framework make use of libraries such as `socket-io` and `shadcn` that reduces boilerplate code. 
 
